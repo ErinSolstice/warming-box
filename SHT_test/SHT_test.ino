@@ -20,7 +20,7 @@ void setup() {
 
   Serial.println("Adafruit SHT4x test");
   if (! sht4.begin()) {
-    Serial.println("Couldn't find SHT4x");
+    Serial.println(F("Couldn't find SHT4x"));
     while (1) delay(1);
   }
   Serial.println("Found SHT4x sensor");
